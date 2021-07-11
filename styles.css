@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;900&display=swap");
 
 :root {
   --off-white: #f3eed9;
@@ -20,6 +20,7 @@ body {
 }
 
 h1, h2 {
+    font-size: 2.2rem;
   /* margin: 0; */
   font-family: "Playfair Display", serif;
 }
@@ -36,7 +37,11 @@ h5 {
 
 .row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.col{
+    width: 100%;
 }
 
 .header {
@@ -66,15 +71,36 @@ h5 {
     margin: 5rem 0;
 }
 
-.section__title{
+.main__title{
     text-align: center;
     color: var(--pri-brown);
 }
 
-.section__cols{
+.main__cols{
     justify-content: space-between;
 }
 
-.section__col{
+.main__col{
     width: 48%;
 }
+
+.section--primary{
+    padding: 5rem 0;
+    color: white;
+    background-color: var(--sec-dark);
+}
+
+.section__text{
+    width: 50%;
+}
+
+.section__title{
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.section__image{
+    width: 48%;
+    align-self: flex-start;
+}
+
